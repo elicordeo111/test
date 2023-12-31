@@ -1,0 +1,106 @@
+:root {
+    --main-bg-color: #eee;
+    --header-bg-color: #fff;
+    --text-primary: #057AFA;
+    --text-secundary: #777;
+    --text-parafo: #333;
+    --text-primary-hover: #19FF48;
+    --font-size-html: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: var(--font-size-html);
+}
+
+body{
+    background: var(--main-bg-color);
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: var(--header-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 2rem;
+
+    background-image: linear-gradient(to right, #057AFA, #19FF48);
+    color: transparent;
+    -webkit-background-clip: text; 
+    background-clip: text;
+   
+}
+
+header nav ul{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+header nav ul li{ 
+   list-style: none;
+   padding-inline: 1rem;
+   padding-inline-end: 2rem;
+}
+
+header nav ul li a{ 
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-primary);
+    transition: .5s;
+}
+
+header nav ul li a:hover{ 
+    color: var(--text-primary-hover);
+    transition: .3s;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    padding-inline: 2rem;
+}
+
+section{
+    margin-top: 2rem;
+    background-color: var(--header-bg-color);
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+section h2{
+   font-size: 3rem;
+   color: var(--text-secundary);
+}
+
+section p{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-parafo);
+    line-height: 1.2;
+ }
+
+ section i{
+    font-size: 3rem;
+    color: var(--text-parafo);
+
+    background-image: linear-gradient(to right, #057AFA, #19FF48);
+    color: transparent;
+    -webkit-background-clip: text; 
+    background-clip: text;
+ }
